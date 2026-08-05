@@ -1,6 +1,6 @@
 const express = require("express")
 const connectDB = require("./mongodbConnection_using_mongoose")
-const userModel = require("./userSchema")
+const userModel = require("../models/userSchema")
 const cors = require("cors")
 const app = express();
 

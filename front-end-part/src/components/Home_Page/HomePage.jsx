@@ -73,7 +73,7 @@ function HomePage() {
             <a href="#collections" className="hover:text-blue-700">Categories</a>
             <a href="#how-it-works" className="hover:text-blue-700">How it Works</a>
             <Link to="/login" className="text-blue-700 hover:text-blue-900">Login</Link>
-            <Link to="/login" className="rounded bg-blue-700 px-5 py-2 text-white shadow-sm hover:bg-blue-800">Sign Up</Link>
+            <Link to="/signup" className="rounded bg-blue-700 px-5 py-2 text-white shadow-sm hover:bg-blue-800">Sign Up</Link>
           </nav>
           <button type="button" aria-label="Toggle menu" className="lg:hidden" onClick={() => setMenuOpen((open) => !open)}>
             {menuOpen ? <X /> : <Menu />}

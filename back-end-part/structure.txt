@@ -1,0 +1,34 @@
+backend/
+├── config/
+│   └── db.js                 // mongoose.connect() lives here
+│
+├── models/
+│   ├── User.js
+│   ├── Vendor.js
+│   ├── Furniture.js
+│   └── Order.js              // if you're doing "buying" flow
+│
+├── controllers/
+│   ├── authController.js     // signup, login, logout
+│   ├── vendorController.js   // vendor CRUD, vendor profile
+│   ├── furnitureController.js// product CRUD, listing, search
+│   └── orderController.js    // place order, order history
+│
+├── routes/
+│   ├── authRoutes.js
+│   ├── vendorRoutes.js
+│   ├── furnitureRoutes.js
+│   └── orderRoutes.js
+│
+├── middleware/
+│   ├── authMiddleware.js     // JWT verify, protect routes
+│   ├── errorMiddleware.js    // centralized error handler
+│   └── uploadMiddleware.js   // multer, for product images
+│
+├── utils/
+│   ├── generateToken.js      // JWT sign helper
+│   └── validators.js         // input validation helpers
+│
+├── .env
+├── server.js                 // entry point
+└── package.json
